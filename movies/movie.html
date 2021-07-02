@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../NS favicon/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="movie.css" />
+    <title>Movie search</title>
+  </head>
+  <body>
+    <!-- Rotational NAvBar -->
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header>
+        <div class="header__img">
+          <lottie-player
+            class="img1"
+            src="https://assets9.lottiefiles.com/packages/lf20_itjl9rou.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            autoplay
+          ></lottie-player>
+          <lottie-player
+            class="img2"
+            src="https://assets6.lottiefiles.com/packages/lf20_cbrbre30.json"
+            mode="bounce"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+
+        <form id="form">
+          <input type="text" id="search" class="search" placeholder="Search" />
+        </form>
+      </header>
+
+      <main id="main"></main>
+    </div>
+    <!-- Sidebar -->
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="/">Home</a></li>
+        <li>
+          <i class="fas fa-user-alt"></i>
+          <a href="./movie.html">Movies list</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="../Booking/booking.html">Booking your show</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
